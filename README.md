@@ -33,6 +33,9 @@ cd src
 
 - `csv2bdbcomp.py`: lê dados de artigos em CSV e os insere na BDBCOMP. Antes de usá-lo, é necessário ajustar configurações dentro do script: dados do evento, entrada para o script (URL ou arquivo) e do intervalo do CSV que se quer processar. Pode-se passar o intervalo do CSV na linha de comando. Por default, o script processa apenas a primeira linha após o cabeçalho do CSV.
 
+- Os scripts não fazem tratamento de exceções. Se algo der errado no parsing ou na comunicação com o servidor da BDBCOMP, a primeira coisa a fazer é observar os erros reportados pelo interpretador.
+
+- Known bug: durante testes do script csv2bdbcomp.py, algumas vezes o servidor da BDBCOMP retornou uma página informando que o artigo foi cadastrado com sucesso, mas o artigo não aparece na área de curadoria da biblioteca. Não foram feitos testes exaustivos, mas pôde-se notar que a página de resposta nesses casos é idêntica à página de resposta de artigos que aparecem na área de curadoria. Se isso acontecer, basta executar o script novamente até que o artigo seja realmente inserido. Artigos duplicados dão erro e artigos inseridos erroneamente podem ser removidos via interface Web da área de curadoria.
 
 
 ## Dependências
