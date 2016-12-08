@@ -18,7 +18,7 @@ Obs.: Testado apenas em Linux.
 2. Entrar na conferência no JEMS com permissão de chair
 3. Descompactar na pasta `data/meta` o arquivo zip obtido em JEMS -> Conference -> Publication chair options -> Download metadata -> Camera ready
 4. Descompactar na pasta `data/all` o arquivo zip obtido em JEMS -> Conference -> Chair -> Configurations -> Export all data
-5. Cadastrar o evento manualmente na BDBCOMP, informando:
+5. Cadastrar o evento manualmente na BDBCOMP (http://www.lbd.dcc.ufmg.br/curadoria/), informando:
    - Nome do evento/conferência
    - Ano
    - Edição (usar números romanos, de preferência)
