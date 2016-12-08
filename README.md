@@ -3,6 +3,15 @@ Cadastra artigos na BDBCOMP a partir de dados exportados do JEMS
 
 ## Instruções de uso
 
+
+### Dependências
+
+- python3
+- python-requests
+- python-lxml
+
+Obs.: Testado apenas em Linux.
+
 ### Preparação
 
 1. Clonar este repositório
@@ -18,6 +27,8 @@ Cadastra artigos na BDBCOMP a partir de dados exportados do JEMS
 6. Ajustar configurações em `src/csv2bdbcomp.py` (ver comentários no início do código)
 
 ### Execução
+
+Abrir um terminal de comandos, localizar a pasta jems2bdbcomp e executar:
 
 ```
 cd src
@@ -38,8 +49,3 @@ cd src
 - Known bug: durante testes do script csv2bdbcomp.py, algumas vezes o servidor da BDBCOMP retornou uma página informando que o artigo foi cadastrado com sucesso, mas o artigo não aparece na área de curadoria da biblioteca. Não foram feitos testes exaustivos, mas pôde-se notar que a página de resposta nesses casos é idêntica à página de resposta de artigos que aparecem na área de curadoria. Se isso acontecer, basta executar o script novamente até que o artigo seja realmente inserido. Artigos duplicados dão erro e artigos inseridos erroneamente podem ser removidos via interface Web da área de curadoria.
 
 
-## Dependências
-
-- python3
-- python-requests
-- python-lxml
